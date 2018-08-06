@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+body {
+    font-family: "Open Sans", serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+p {
+    text-align: center;
+}
+.wrapper {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 90vh;
+    box-shadow: 0px 13px 40px -13px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+}
+
+.title-container {
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+
+.title-container__title {
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.title-container__subtitle {
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+    color: white;
+}
+
+.form-container {
+    background-color: rgba(94, 142, 165, 0.5);
+    height: 92vh;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px #f16051;
+    padding-bottom: 4px;
+    color: #fff !important;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+input[type="text"] {
+    outline: none;
+}
+
+.inputs {}
+
+input[type="Reset"] {
+    border: 0;
+    padding: 8px 60px;
+    margin: 3px 10px;
+    border-radius: 2px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #1a0dc5;
+    color: #fff;
+    font-weight: 100;
+}
+
+body,
+html {
+    -webkit-background-size: cover;
+    /* For WebKit*/
+    -moz-background-size: cover;
+    /* Mozilla*/
+    -o-background-size: cover;
+    /* Opera*/
+    background-size: cover;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px transparent;
+    transition: background-color 5000s; 
+    -webkit-text-fill-color: #fff !important;
+}
+
+button {
+    border: 0;
+    padding: 8px 30px;
+    margin: 3px 10px;
+    border-radius: 2px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f16051;
+    color: #fff;
+    font-weight: 100;
+}
+
+button:active {
+    outline: none;
+}
+
+.weather__info {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.weather__key {
+    color: #f16051;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.06);
+    padding: 20px 0 20px 0;
+    font-weight: 400;
+}
+
+.weather__key:last-child {
+    border: 0;
+}
+
+.weather__value {
+    color: #fff;
+    font-weight: 200;
+}
+
+.weather__error {
+    color: #f16051;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+@media screen and (device-width:320px) {
+    .title-container__title {
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+
+    button {
+        
+            border: 0;
+            padding: 8px 16px;
+            margin: 3px 0px;
+            border-radius: 2px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #f16051;
+            color: #fff;
+            font-weight: 100;
+        
+    }
+
+    input[type="Reset"] {
+        border: 0;
+        padding: 8px 30px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #1a0dc5;
+        color: #fff;
+        font-weight: 100;
+    }
+
+    input[type="text"] {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid 1px #f16051;
+        padding-bottom: 4px;
+        color: #fff !important;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 15px;
+        color: #000;
+    }
+
+    p {
+        margin: 11px -34px 19px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .title-container__subtitle {
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        color: white;
+        font-size: 19px;
+    }
+}
+
+@media screen and (device-width:360px) {
+
+    button {
+        border: 0;
+        padding: 8px 25px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #f16051;
+        color: #fff;
+        font-weight: 100;
+    }
+
+    input[type="Reset"] {
+        border: 0;
+        padding: 8px 39px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #1a0dc5;
+        color: #fff;
+        font-weight: 100;
+    }
+    input[type="text"] {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid 1px #f16051;
+        padding-bottom: 4px;
+        color: #fff !important;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 15px;
+        color: #000;
+    }
+
+    p {
+        margin: 11px -34px 19px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .title-container__title {
+        font-size: 44px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+
+    .title-container__subtitle {
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        color: white;
+        font-size: 21px;
+    }
+}
+
+@media screen and (device-width:375px) {
+    button {
+        border: 0;
+        padding: 8px 30px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #f16051;
+        color: #fff;
+        font-weight: 100;
+    }
+    input[type="Reset"] {
+        border: 0;
+        padding: 8px 44px;
+        margin: 3px 0px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #1a0dc5;
+        color: #fff;
+        font-weight: 100;
+    }
+    input[type="text"] {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid 1px #f16051;
+        padding-bottom: 4px;
+        color: #fff !important;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 15px;
+        color: #000;
+    }
+    p {
+        margin: 11px -34px 19px;
+        text-align: center;
+        font-size: 17px;
+    }
+    .title-container__title {
+        font-size: 44px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+
+    .title-container__subtitle {
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        color: white;
+        font-size: 21px;
+    }
+}
+
+@media screen and (device-width:414px) {
+    input[type="Reset"] {
+        border: 0;
+        padding: 8px 44px;
+        margin: 3px 10px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #1a0dc5;
+        color: #fff;
+        font-weight: 100;
+    }
+    input[type="text"] {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid 1px #f16051;
+        padding-bottom: 4px;
+        color: #fff !important;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        width: 90%;
+        margin-right: 20px;
+        font-size: 15px;
+        color: #000;
+    }
+
+    p {
+        margin: 11px -34px 19px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .title-container__title {
+        font-size: 44px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+
+    .title-container__subtitle {
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        color: white;
+        font-size: 21px;
+    }
+    
+}
+
+@media screen and (device-width:411px) {
+    input[type="Reset"] {
+        border: 0;
+        padding: 8px 44px;
+        margin: 3px 10px;
+        border-radius: 2px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #1a0dc5;
+        color: #fff;
+        font-weight: 100;
+    }
+    input[type="text"] {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid 1px #f16051;
+        padding-bottom: 4px;
+        color: #fff !important;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        width: 90%;
+        margin-right: 20px;
+        font-size: 15px;
+        color: #000;
+    }
+    p {
+        margin: 11px -34px 19px;
+        text-align: center;
+    }
+}
+
+@media screen and (device-width: 812px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 145vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 736px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 131vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 667px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 145vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 568px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 187vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 823px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 145vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 731px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 145vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (device-width: 640px) and (orientation: landscape) {
+
+    .form-container {
+        background-color: rgba(94, 142, 165, 0.5);
+        height: 159vh;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+}
